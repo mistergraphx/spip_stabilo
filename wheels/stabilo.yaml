@@ -1,0 +1,30 @@
+--- # Syntaxe des raccourcis SPIP, version 0.0.1
+    #
+    # Si on nomme une regle, elle devient surchargeable
+    # http://lumadis.be/regex/test_regex.php?id=2935
+stabilo3:
+  # raccourcis en [*** Un texte surligne 3]
+  # intertitres
+  match: [ '[***', ']' ]
+  replace: ["<span class=\"stabilo3\">", "</span>"]
+  if_str: '[***'
+  type: str
+  priority: -40
+
+stabilo2:
+  # raccourcis en [** Un texte surligne 2]
+  # intertitres
+  match: [ '[**', ']' ]
+  replace: ["<span class=\"stabilo2\">", "</span>"]
+  if_str: '[**'
+  type: str
+  priority: -40
+  
+stabilo1:
+  # raccourcis en [* Un texte surligne 1 ]
+  # intertitres
+  match: [ '[*', ']' ]
+  replace: ["<span class=\"stabilo1\">", "</span>"]
+  if_str: '[*'
+  type: str
+  priority: -40

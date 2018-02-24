@@ -1,0 +1,23 @@
+<paquet
+	prefix="stabilo"
+	categorie="edition"
+	version="1.0.0"
+	etat="dev"
+	compatibilite="[3.2.0;3.2.*]"
+	logo="prive/themes/spip/images/stabilo-64.png"
+	documentation=""
+>
+	<nom>Stabilo</nom>
+	<!-- Surligner avec le porteplume -->
+
+	<auteur>Arnaud B. (Mist. GraphX)</auteur>
+	<licence>GNU/GPL</licence>
+
+	<pipeline nom="ieconfig_metas" inclure="stabilo_pipelines.php" />
+
+	<pipeline nom="porte_plume_barre_pre_charger" inclure="stabilo_pipelines.php" />
+	<pipeline nom="porte_plume_lien_classe_vers_icone" inclure="stabilo_pipelines.php" />
+
+	<necessite nom="tw" compatibilite="[0.3.1;[" />
+
+</paquet>
