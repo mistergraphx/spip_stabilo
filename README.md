@@ -4,15 +4,17 @@
 
 Permettre au rédacteur de surligner des parties de texte
 
+## Fonctionnalités
 
-## Fonctionnalitées
+Le plugin ajoute des boutons dans la barre d'outils typographique de spip,
+permettant de surligner des parties de texte pour les mettre en évidence.
 
-- Gérer une compatibilité ascendante avec enluminure_typo :
-syntaxte `[* Surligné 1 *]` ou `[** surligné deux *]`
+| Raccourcis | Description|
+|--|--|
+| `[* Texte surligné 1]`      | Surligne le texte avec la couleur 1 |
+| `[** Texte surligné 2]`     | Surligne le texte avec la couleur 2 |
+| `[*** Texte surligné 2]`    | Surligne le texte avec la couleur 3 |
 
-- Personaliser les classes ou les couleures ?
-
-- Personaliser le markup span,div,strong,mark 
 
 ## Sources et docs
 
@@ -20,3 +22,10 @@ http://romy.tetue.net/stabilo-web
 
 https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-mark-element
 https://www.alsacreations.com/astuce/lire/1378-html5-element-mark.html
+
+
+## Todo
+
+- Rendre configurable, avec choix des couleurs background/foreground
+- Personnaliser les classes ? Ou les couleurs ?
+- Personnaliser le markup span, div, strong, mark
