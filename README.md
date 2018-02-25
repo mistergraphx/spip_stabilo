@@ -23,9 +23,13 @@ http://romy.tetue.net/stabilo-web
 https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-mark-element
 https://www.alsacreations.com/astuce/lire/1378-html5-element-mark.html
 
+Accessibilité :
+https://codepen.io/jacmaes/pen/sDiof utilise le aria-label pour décrire le surlignage
 
 ## Todo
 
-- Rendre configurable, avec choix des couleurs background/foreground
-- Personnaliser les classes ? Ou les couleurs ?
-- Personnaliser le markup span, div, strong, mark
+- [ ] Rendre accessible : la couleur ne suffit pas,
+ La couleur de surlignage doit être décrite via un aria-label, voir une explication visuelle, pour un daltonien
+- [ ] Rendre configurable, avec choix des couleurs background/foreground
+- [ ] Personnaliser les classes ? Ou les couleurs ?
+- [ ] Personnaliser le markup span, div, strong, mark

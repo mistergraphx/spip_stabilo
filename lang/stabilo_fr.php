@@ -17,6 +17,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
   //  O
 	'outil_stabilo'=>'Surlignage',
 	'outil_stabilo1' => 'Couleur de sulignage 1',
+	'outil_stabilo2' => 'Couleur de sulignage 2',
+	'outil_stabilo3' => 'Couleur de sulignage 3',
 	// T
 	'titre_page_configurer_stabilo' => 'configurer_stabilo',
 );

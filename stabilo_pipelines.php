@@ -36,6 +36,24 @@ function stabilo_porte_plume_barre_pre_charger($barres){
 					"closeWith"=>" ]",
 					"display"     => true,
 					"selectionType" => "word",
+				),
+				array(
+					"id"			=> 'stabilo2',
+					"name"		=> _T('stabilo:outil_stabilo2'),
+					"className"=> 'stabilo2',
+					"openWith"=>"[** ",
+					"closeWith"=>" ]",
+					"display"     => true,
+					"selectionType" => "word",
+				),
+				array(
+					"id"			=> 'stabilo3',
+					"name"		=> _T('stabilo:outil_stabilo3'),
+					"className"=> 'stabilo3',
+					"openWith"=>"[*** ",
+					"closeWith"=>" ]",
+					"display"     => true,
+					"selectionType" => "word",
 				)
 			)
 	));
@@ -47,7 +65,9 @@ function stabilo_porte_plume_barre_pre_charger($barres){
 function stabilo_porte_plume_lien_classe_vers_icone($flux){
 	$icones = array(
 		'stabilo' => array('stabilo.png','0'),
- 		'stabilo1' => array('stabilo1.png','0')
+ 		'stabilo1' => array('stabilo1.png','0'),
+		'stabilo2' => array('stabilo2.png','0'),
+		'stabilo3' => array('stabilo3.png','0')
 	);
 
 	return array_merge($flux, $icones);
