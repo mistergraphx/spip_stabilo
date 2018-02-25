@@ -12,12 +12,14 @@
 if (!defined('_ECRIRE_INC_VERSION')) {
 	return;
 }
+
 function porte_plume_intertitres_ieconfig_metas($table){
 	$table['stabilo']['titre'] = _T('stabilo:stabilo_titre');
 	$table['stabilo']['icone'] = 'prive/themes/spip/images/stabilo-16.png';
 	$table['stabilo']['metas_serialize'] = 'stabilo';
 	return $table;
 }
+
 
 // http://www.spip-contrib.net/Porte-Plume-documentation-technique
 function stabilo_porte_plume_barre_pre_charger($barres){

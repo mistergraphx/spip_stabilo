@@ -1,20 +1,7 @@
 #CACHE{3600*100,cache-client}
 #HTTP_HEADER{Content-Type: text/css; charset=iso-8859-15}
 #HTTP_HEADER{Vary: Accept-Encoding}
-#SET{colors,#ARRAY{
-	'stabilo1', #ARRAY{
-		'background', silver,
-		'foreground', black
-	},
-	'stabilo2', #ARRAY{
-		'background', pink,
-		'foreground', black
-	},
-	'stabilo3', #ARRAY{
-		'background', yellow,
-		'foreground', black
-	},
-}}
+#SET{colors,#CONFIG{stabilo}}
 <BOUCLE_genererClass(DATA){source table, #GET{colors}}>
 .[(#CLE)]{
 	[background-color: (#VALEUR{background});]
