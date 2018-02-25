@@ -5,26 +5,26 @@
 stabilo3:
   # raccourcis en [*** Un texte surligne 3]
   # intertitres
-  match: [ '[***', ']' ]
-  replace: ["<span class=\"stabilo3\">", "</span>"]
+  match: "/(\[\*\*\*)(.*?)(\])/m"
+  is_callback: Y
+  replace: "stabilo"
   if_str: '[***'
-  type: str
   priority: -40
 
 stabilo2:
   # raccourcis en [** Un texte surligne 2]
   # intertitres
-  match: [ '[**', ']' ]
-  replace: ["<span class=\"stabilo2\">", "</span>"]
+  match: "/(\[\*\*)(.*?)(\])/m"
+  is_callback: Y
+  replace: "stabilo"
   if_str: '[**'
-  type: str
   priority: -40
-  
+
 stabilo1:
   # raccourcis en [* Un texte surligne 1 ]
   # intertitres
-  match: [ '[*', ']' ]
-  replace: ["<span class=\"stabilo1\">", "</span>"]
+  match: "/(\[\*)(.*?)(\])/m"
+  is_callback: Y
+  replace: "stabilo"
   if_str: '[*'
-  type: str
   priority: -40

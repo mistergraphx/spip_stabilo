@@ -1,8 +1,7 @@
 # Stabilo
 
-## Description
+Surligner des parties de texte, avec des couleurs et de manière accéssible.
 
-Permettre au rédacteur de surligner des parties de texte
 
 ## Fonctionnalités
 
@@ -14,6 +13,10 @@ permettant de surligner des parties de texte pour les mettre en évidence.
 | `[* Texte surligné 1]`      | Surligne le texte avec la couleur 1 |
 | `[** Texte surligné 2]`     | Surligne le texte avec la couleur 2 |
 | `[*** Texte surligné 2]`    | Surligne le texte avec la couleur 3 |
+
+Les couleurs de surlignage sont configurables depuis l'espace privé.
+Ainsi que leur description textuel, qui est utilisé dans le rendu pour le aria-label du texte mis en évidence.
+
 
 
 ## Sources et docs
