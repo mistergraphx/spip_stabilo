@@ -7,25 +7,26 @@
 
 	<form method="post" action="#ENV{action}">
 	<div>
+
 		#ACTION_FORMULAIRE{#ENV{action}}
 		<fieldset>
 			<BOUCLE_listColors(DATA){source table, #CONFIG{stabilo}}>
 			<div class="editer-groupe">
-				<label for="[(#CLE)]_label">Description textuelle de la couleur #CLE</label>
-				<input type="text" name="[(#CLE)]_label" value="#VALEUR{label}">
-			</div>
-			<div class="editer-groupe">
-				<label for="[(#CLE)]_background">Background</label>
-				<input type="color" name="[(#CLE)]_background" value="#VALEUR{background}">
-			</div>
-			<div class="editer-groupe">
-				<label for="[(#CLE)]_foreground">Foreground</label>
-				<input type="color" name="[(#CLE)]_foreground" value="#VALEUR{foreground}">
+				<div class="editer">
+					<label for="[(#CLE)]_label">Description textuelle de la couleur #CLE</label>
+					<input type="text" name="[(#CLE)]_label" value="#VALEUR{label}">
+				</div>
+				<div class="editer">
+					<label for="[(#CLE)]_background">Background</label>
+					<input type="color" name="[(#CLE)]_background" value="#VALEUR{background}">
+				</div>
+				<div class="editer">
+					<label for="[(#CLE)]_foreground">Foreground</label>
+					<input type="color" name="[(#CLE)]_foreground" value="#VALEUR{foreground}">
+				</div>
 			</div>
 			</BOUCLE_listColors>
 		</fieldset>
-
-		<input type="hidden" name="_meta_casier" value="stabilo" />
 		<p class="boutons"><span class="image_loading">&nbsp;</span><input type="submit" class="submit" value="<:bouton_enregistrer:>" /></p>
 	</div>
 	</form>
