@@ -1,7 +1,7 @@
 <paquet
 	prefix="stabilo"
 	categorie="edition"
-	version="1.0.0"
+	version="1.0.1"
 	schema="0.0.1"
 	etat="dev"
 	compatibilite="[3.2.0;3.2.*]"
@@ -15,6 +15,7 @@
 
 	<pipeline nom="ieconfig_metas" inclure="stabilo_pipelines.php" />
 	<pipeline nom="insert_head_css" inclure="stabilo_pipelines.php"/>
+	<pipeline nom="header_prive" inclure="stabilo_pipelines.php"/>
 	<pipeline nom="porte_plume_barre_pre_charger" inclure="stabilo_pipelines.php" />
 	<pipeline nom="porte_plume_lien_classe_vers_icone" inclure="stabilo_pipelines.php" />
 

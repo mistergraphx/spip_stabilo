@@ -14,13 +14,24 @@ if (!defined('_ECRIRE_INC_VERSION')) {
 }
 
 /**
- * Insertion css
+ * Insertion css public
  *
  * @param $flux
  * @return string
  *
  */
 function stabilo_insert_head_css($flux){
+	$flux .= '<link rel="stylesheet" type="text/css" href="' . produire_fond_statique('css/stabilo.css') . '" />' . "\n";;
+	return $flux;
+}
+/**
+ * Insertion css privé
+ *
+ * @param $flux
+ * @return string
+ *
+ */
+function stabilo_header_prive($flux){
 	$flux .= '<link rel="stylesheet" type="text/css" href="' . produire_fond_statique('css/stabilo.css') . '" />' . "\n";;
 	return $flux;
 }
