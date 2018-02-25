@@ -2,6 +2,7 @@
 
 Surligner des parties de texte, avec des couleurs et de manière accéssible.
 
+![](https://framapic.org/pDkNGJH05k4G/SniYfn85ukWL)
 
 ## Fonctionnalités
 
