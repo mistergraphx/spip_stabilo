@@ -13,7 +13,19 @@ if (!defined('_ECRIRE_INC_VERSION')) {
 	return;
 }
 
-function porte_plume_intertitres_ieconfig_metas($table){
+/**
+ * Insertion css
+ *
+ * @param $flux
+ * @return string
+ *
+ */
+function stabilo_insert_head_css($flux){
+	$flux .= '<link rel="stylesheet" type="text/css" href="' . produire_fond_statique('css/stabilo.css') . '" />' . "\n";;
+	return $flux;
+}
+
+function stabilo_ieconfig_metas($table){
 	$table['stabilo']['titre'] = _T('stabilo:stabilo_titre');
 	$table['stabilo']['icone'] = 'prive/themes/spip/images/stabilo-16.png';
 	$table['stabilo']['metas_serialize'] = 'stabilo';
@@ -67,9 +79,9 @@ function stabilo_porte_plume_barre_pre_charger($barres){
 function stabilo_porte_plume_lien_classe_vers_icone($flux){
 	$icones = array(
 		'stabilo' => array('stabilo.png','0'),
- 		'stabilo1' => array('stabilo1.png','0'),
-		'stabilo2' => array('stabilo2.png','0'),
-		'stabilo3' => array('stabilo3.png','0')
+ 		'stabilo1' => array('base-stabilo.png','0'),
+		'stabilo2' => array('base-stabilo.png','0'),
+		'stabilo3' => array('base-stabilo.png','0')
 	);
 
 	return array_merge($flux, $icones);

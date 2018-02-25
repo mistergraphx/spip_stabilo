@@ -1,0 +1,52 @@
+#CACHE{3600*100,cache-client}
+#HTTP_HEADER{Content-Type: text/css; charset=iso-8859-15}
+#HTTP_HEADER{Vary: Accept-Encoding}
+#SET{colors,#CONFIG{stabilo}}
+<BOUCLE_genererClass(DATA){source table, #GET{colors}}>
+.[(#CLE)]{
+	[background-color: (#VALEUR{background});]
+	[color: (#VALEUR{foreground});]
+}
+.[(#CLE)][aria-label]:after {
+	border-left: 6px solid #VALEUR{background};
+}
+.markItUp .[(#CLE)]>a>em {
+	[background-color: (#VALEUR{background});]
+	[color: (#VALEUR{foreground});]
+}
+</BOUCLE_genererClass>
+
+.stabilo[aria-label] {
+	position: relative;
+}
+
+.stabilo[aria-label]:after {
+	content: attr(aria-label);
+	display: none;
+	position: absolute;
+	top: 110%;
+	left: 10px;
+	z-index: 5000;
+	pointer-events: none;
+	padding: 8px 10px;
+	line-height: 15px;
+	white-space: nowrap;
+	text-decoration: none;
+	text-indent: 0;
+	overflow: visible;
+	font-size: .9em;
+	font-weight: normal;
+	color: #fff;
+	text-shadow: 1px 0 1px #888;
+	background-color: #412917;
+
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-box-shadow: 1px 2px 6px rgba(0,0,0,0.3);
+	box-shadow: 1px 2px 6px rgba(0,0,0,0.3);
+}
+
+.stabilo[aria-label]:hover:after,
+.stabilo[aria-label]:focus:after {
+	display: block;
+}
