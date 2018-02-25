@@ -25,13 +25,13 @@ if (!defined('_ECRIRE_INC_VERSION')) {
 // 3 - le groupe fermant
 function stabilo($t){
 
-	// spip_log($t,'stabilo');
+	spip_log('Stabilo_Wheel : '.$t,'stabilo');
 
 	$color= strlen($t[1]);
 	$class= 'stabilo'.$color;
 	$stabilo_colors = lire_config('stabilo');
 
 	($label=$stabilo_colors[$class]['label']) ? $label = "aria-label=\"$label\""  : $label=false;
-	$html = "<span class=\"stabilo $class\" $label>".$t[2]."<span>";
+	$html = "<span class=\"stabilo $class\" $label>".$t[2]."</span>";
 	return $html;
 }

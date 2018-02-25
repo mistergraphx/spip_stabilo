@@ -12,10 +12,11 @@ permettant de surligner des parties de texte pour les mettre en évidence.
 |--|--|
 | `[* Texte surligné 1]`      | Surligne le texte avec la couleur 1 |
 | `[** Texte surligné 2]`     | Surligne le texte avec la couleur 2 |
-| `[*** Texte surligné 2]`    | Surligne le texte avec la couleur 3 |
+| `[*** Texte surligné 3]`    | Surligne le texte avec la couleur 3 |
 
 Les couleurs de surlignage sont configurables depuis l'espace privé.
-Ainsi que leur description textuel, qui est utilisé dans le rendu pour le aria-label du texte mis en évidence.
+Ainsi que leur description textuelle, qui est utilisé dans le rendu comme aria-label du texte mis en évidence.
+La description est affiché en infobulle lors du survol.
 
 
 
@@ -31,8 +32,5 @@ https://codepen.io/jacmaes/pen/sDiof utilise le aria-label pour décrire le surl
 
 ## Todo
 
-- [ ] Rendre accessible : la couleur ne suffit pas,
- La couleur de surlignage doit être décrite via un aria-label, voir une explication visuelle, pour un daltonien
-- [ ] Rendre configurable, avec choix des couleurs background/foreground
 - [ ] Personnaliser les classes ? Ou les couleurs ?
 - [ ] Personnaliser le markup span, div, strong, mark
