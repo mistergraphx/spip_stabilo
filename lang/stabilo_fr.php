@@ -6,19 +6,13 @@ if (!defined('_ECRIRE_INC_VERSION')) {
 }
 
 $GLOBALS[$GLOBALS['idx_lang']] = array(
-
-	// S
-	'stabilo_titre' => 'Stabilo',
-
 	// C
-	'cfg_exemple' => 'Exemple',
-	'cfg_exemple_explication' => 'Explication de cet exemple',
-	'cfg_titre_parametrages' => 'Paramétrages',
+	'cfg_stabilo_titre' => 'Configurer Stabilo',
+	'cfg_titre_parametrages' => 'Couleurs et textes de surlignage',
   //  O
 	'outil_stabilo'=>'Surlignage',
 	'outil_stabilo1' => 'Couleur de sulignage 1',
 	'outil_stabilo2' => 'Couleur de sulignage 2',
 	'outil_stabilo3' => 'Couleur de sulignage 3',
-	// T
-	'titre_page_configurer_stabilo' => 'configurer_stabilo',
+
 );
