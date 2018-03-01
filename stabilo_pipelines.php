@@ -37,7 +37,7 @@ function stabilo_header_prive($flux){
 }
 
 function stabilo_ieconfig_metas($table){
-	$table['stabilo']['titre'] = _T('stabilo:stabilo_titre');
+	$table['stabilo']['titre'] = _T('paquet-stabilo:stabilo_nom');
 	$table['stabilo']['icone'] = 'prive/themes/spip/images/stabilo-16.png';
 	$table['stabilo']['metas_serialize'] = 'stabilo';
 	return $table;
