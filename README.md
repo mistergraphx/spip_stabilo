@@ -1,6 +1,6 @@
 # Stabilo
 
-Surligner des parties de texte, avec des couleurs et de manière accéssible.
+Surligner des parties de texte, avec des couleurs et de manière accessible.
 
 ![](https://framapic.org/pDkNGJH05k4G/SniYfn85ukWL)
 
@@ -22,16 +22,19 @@ La description est affiché en infobulle lors du survol.
 
 ## Sources et docs
 
-http://romy.tetue.net/stabilo-web
+* http://romy.tetue.net/stabilo-web
+* https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-mark-element
+* https://www.alsacreations.com/astuce/lire/1378-html5-element-mark.html
 
-https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-mark-element
-https://www.alsacreations.com/astuce/lire/1378-html5-element-mark.html
 
 Accessibilité :
-https://codepen.io/jacmaes/pen/sDiof utilise le aria-label pour décrire le surlignage
+
+* https://codepen.io/jacmaes/pen/sDiof utilise le aria-label pour décrire le surlignage
+* https://developer.paciellogroup.com/blog/2017/12/short-note-on-making-your-mark-more-accessible/
+
 
 ## Todo
 
 - [ ] Une option pour ne pas afficher les notes coté public, si on souhaite utiliser les couleurs pour mettre des notes de relecture ou des infos
 - [ ] Personnaliser les classes ? Ou les couleurs ?
-- [ ] Personnaliser le markup span, div, strong, mark
+- [ ] Personnaliser le markup span, div, strong, mark, ins, del
